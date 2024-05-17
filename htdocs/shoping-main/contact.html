@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style_hamburger.css"> <!-- style for nav -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Your existing CSS styles, except the styles related to the 2nd bar */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            margin-top: 15px;
+            /* Bring the image down a bit */
+            margin-right: 20px
+        }
+
+        /* Caption text   padding-top: 20px;
+  justify-content: center;*/
+        .text {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            padding: 8px 12px;
+            width: 100%;
+            text-align: center;
+            max-width: 50%;
+            word-wrap: break-word;
+            position: absolute;
+            /* Add this line */
+            top: 32%;
+            /* Add this line */
+            left: 25%;
+            /* Add this line */
+            transform: translateX(-50%);
+            /* Add this line */
+        }
+
+        .frames-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .round-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        .store-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .store-button {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(125deg, #11998e, #38ef7d);
+            color: white;
+            text-decoration: none;
+            border-radius: 200px;
+            font-size: 18px;
+            margin-top: 192px;
+        }
+
+        .qrcode img {
+            width: 200px;
+            /* Set your desired width here */
+            height: auto;
+            /* Maintain the aspect ratio */
+            image-resolution: 10px;
+            padding-top: 42px;
+        }
+
+        .text2 {
+            color: rgb(0, 0, 0);
+            font-size: 28px;
+            padding: 8px 12px;
+            width: 100%;
+            text-align: center;
+            max-width: 50%;
+            word-wrap: break-word;
+            position: absolute;
+            /* Add this line */
+            top: 105%;
+            /* Add this line */
+            left: 25%;
+            /* Add this line */
+            transform: translateX(-50%);
+            /* Add this line */
+        }
+
+        .centered-iframe {
+            position: absolute;
+            bottom: -490px;
+            left: 0;
+            width: 100%;
+            height: 500px; /* Set the desired height */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+}
+
+        .centered-iframe iframe {
+            border: none;
+            width: 1300px;
+            height: 78%; /* Make the iframe take up the full height of its container */
+            margin: -10px;
+}
+
+
+    </style>
+    <script>
+        $(function () {
+            $("#buy").load("buy.html");
+        });
+    </script>
+</head>
+
+<body data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0">
+    <nav>
+        <button class="btn-hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <img src="./imgs/logo-shabu.png" class="logonav" width="80px" height="80px">
+        <h2>Shabu Easy By Ammy</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">contract</a></li>
+        </ul>
+    </nav>
+    <div class="text" data-aos="fade-right" data-aos-duration="1000">
+        <p>สั่งได้เลยออนไลน์ที่ Robinhood<br>หรือสแกน QRCode ข้างล่างนี้ได้เลย</p>
+        <div class="qrcode">
+            <img src="qr-code.png">
+        </div><br>
+        <div>
+            <div id="buy" data-aos="zoom-in" data-aos-delay="1250"></div>
+        </div>
+    </div>
+    <div class="text2" data-aos="fade-right" data-aos-duration="1000">
+        <p>หากอยากสั่งที่หน้าร้านโดยตรง สามารถดูแผนที่ ข้างล่างนี้ได้เลย</p>
+    </div>
+    <div class="centered-iframe" data-aos="zoom-in-up">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3872.1879328465943!2d100.54582599999999!3d13.947412999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDU2JzUwLjciTiAxMDDCsDMyJzQ1LjAiRQ!5e0!3m2!1sth!2sth!4v1691726174855!5m2!1sth!2sth"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn-hamburger").on("click", function () {
+            $("nav ul").toggleClass("nav-active");
+        })
+    });</script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

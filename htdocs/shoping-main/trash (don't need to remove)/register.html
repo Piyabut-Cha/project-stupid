@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('main_background.png');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px 80px;
+      border-radius: 20px;
+    }
+  
+    h2 {
+      color: #38ef7d;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px red;
+    }
+  
+    form {
+      margin-bottom: 20px;
+    }
+  
+    label {
+      display: block;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+  
+    input[type="text"] {
+      padding: 8px;
+      width: 200px;
+    }
+  
+    input[type="submit"] {
+      background-color: #38ef7d;
+      color: #ffffff;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 50px;
+      cursor: pointer;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    a {
+      color: #38ef7d;
+      text-decoration: none;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    .logopic img {
+      margin-right: 80px;
+    }
+    h2 span {
+    display: inline-block;
+    background-color: #38ef7d;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  </style>  
+  <title>Register</title>
+  <link rel="icon" sizes="32x32" href="favicon-32x32.png">
+</head>
+<body>
+  <div class="logopic">
+    <img src="logo-shabu.png" type="logopic" alt="logopic" width="237px" height="265px">
+  </div>
+  <div class="login-container">
+  <h2>Register</h2>
+  <form action="register.php" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <p style="text-align: center;">
+    <input type="submit" value="Register">
+  </p>
+  </form>
+
+  <p style="text-align: center;">
+    <input type="submit" onclick="location.href='login.html'" value="Login">
+  </p>
+</div>
+</body>
+</html>

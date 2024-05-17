@@ -1,0 +1,151 @@
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src=".\imgs\เต้าหู้ปลา.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\เต้าหู้ปลาชีส.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\เห็ดหอม.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\แฮมหมูสเต็ก.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\โบโลน่าหมู.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\ไส้กรอกไก่พันเบค่อน.webp" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\ไส้กรอกไก่สอดไส้ชีส.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\ขนมจีบหมู.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\ค็อกเทลชีส.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\จัมโบ้ชีส.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\ชิกูวะ.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\สาหร่ายพันกุ้ง.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\สาหร่ายพันปูอัด.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\หมี่หยก.webp" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\imgs\หมูเด้ง.jpg" class="imgshow">
+    </div>
+
+    <div class="mySlides fade">
+        <img src=".\trash (don't need to remove)\61AZR7RuKeL._AC_UF894,1000_QL80_.jpg" class="imgshow">
+    </div>
+
+
+    <!-- Three Round Frames -->
+    <!-- <div class="frames-container">
+    <div class="round-frame">
+        <img src="__watanae_yuuka_r.jpg" alt="Image 1">
+    </div>
+    <div class="round-frame">
+        <img src="__watanae_yuuka_r2.jpg" alt="Image 2">
+    </div>
+    <div class="round-frame">
+        <img src="__watanae_yuuka_r3.jpg" alt="Image 3">
+    </div>
+</div> -->
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>

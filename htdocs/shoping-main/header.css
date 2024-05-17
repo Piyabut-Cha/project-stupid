@@ -1,0 +1,21 @@
+header{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(mouth-watering-shabu-shabu-0vg8at5j0xj86c35.jpg)
+}
+.header-info {
+    text-align: center;
+    width: 1100px;
+    height: 300px;
+    color: #fff;
+}
+.header-info h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90px;
+}
+.header-info p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}

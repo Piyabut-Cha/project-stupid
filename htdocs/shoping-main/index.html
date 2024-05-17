@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style_hamburger.css"> <!-- style for nav -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Your existing CSS styles, except the styles related to the 2nd bar */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            margin-top: 15px;
+            /* Bring the image down a bit */
+            margin-right: 20px
+        }
+
+        /* Caption text */
+
+        /* Number text (1/3 etc) */
+        .imgshow {
+            width: 30%;
+            border-radius: 12%;
+            float: right;
+            height: auto;
+        }
+
+        .text2 {
+            text-align: center;
+            margin-top: 0px;
+            /* Adjust the margin-top to center the text vertically */
+            margin-bottom: 15px;
+            margin: auto;
+            width: 28%;
+            padding: 10px;
+        }
+        .text2_1 {
+            text-align: center;
+            margin-top: 0px;
+            /* Adjust the margin-top to center the text vertically */
+            margin-bottom: 15px;
+            margin: auto;
+            padding: 32px;
+        }
+
+        .bigtext h1 {
+            font-size: 36px;
+            margin-bottom: 13px;
+            background: linear-gradient(125deg, #e61b36, #9c1032);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 334%;
+        }
+        .bigtext2 h1 {
+            font-size: 36px;
+            margin-bottom: 13px;
+            background: linear-gradient(125deg, #e61b36, #9c1032);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: 104%;
+        }
+
+        .text2 p {
+            font-size: 24px;
+            margin-bottom: 108px;
+            margin-right: -455px;
+        }
+        .text2_1 p {
+            font-size: 24px;
+            margin-bottom: 108px;
+            margin-right: -416px;
+        }
+
+
+        /* Additional Styles for Three Round Frames */
+        .frames-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .round-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        .round-frame img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .store-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .store-button {
+            display: inline-block;
+            padding: 18px 50px;
+            color: white;
+            text-decoration: none;
+            border-radius: 200px;
+            font-size: 18px;
+            margin-top: 17px;
+            margin-left: -164px;
+        }
+
+        .section {
+            padding: 40px;
+            color: #000;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            background: linear-gradient(125deg, #e61b36, #9c1032);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-left: -169px;
+        }
+
+        .section p {
+            font-size: 24px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            margin-left: -177px;
+        }
+
+        .gallery-item {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .bigtext{
+        width: 100%;
+        }
+        .text2_1 p{
+            font-size: 24px;
+
+        }
+        .batton2{
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        
+        .box2{
+            margin-left: -367px;
+            width: 110%;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 52px;
+            margin-top: 124px;
+        }
+        h2{
+            left: auto;
+}
+        
+    </style>
+    <script>
+        $(function () {
+            $("#slideshow-image").load("slide_images.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#test_button").load("test_button.html");
+        });
+    </script>
+</head>
+
+<body data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0">
+    <nav>
+        <button class="btn-hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <img src="./imgs/logo-shabu.png" class="logonav" width="80px" height="80px">
+        <h2>Shabu Easy By Ammy</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">contract</a></li>
+        </ul>
+    </nav>
+    <!--เอาไว้ทดลองตัวกล่องบน-->
+    <header>
+        <div class="header-info">
+            <h1>Shabu Easy By Ammy</h1>
+            <p></p>
+            <a class="store-button" href="index.html"></a>
+            <div id="test_button" data-aos="zoom-in" data-aos-delay="1000"></div>
+        </div>
+    </header>
+
+    <div class="box">
+    <div class="text2" data-aos="fade-right" data-aos-duration="1000">
+        <div class="bigtext">
+            <h1>Shabu Easy By Ammy</h1>
+        </div>
+        <p>
+            ยินดีต้อนรับสู่ร้าน Shabu Easy by Ammy! ร้านนี้เป็นสถานที่ที่คุณสามารถสนุกกับการรับประทานอาหารชาบูแบบง่าย ๆ
+            แต่อร่อยมากได้ นี่คือข้อมูลเพิ่มเติมเกี่ยวกับร้าน Shabu Easy by Ammy
+        </p>
+        <div class="img-index"> 
+            <img src="main_background.jpg" width="400px" height="300px"> 
+        </div>
+    </div>
+    <div class="box2">
+        <div class="text2_1>
+            <!-- <a class="store-button" href="index.html">
+            <br>
+            <br>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="bigtext2">
+                    <h1>ทำไมเราต้องกินชาบูร้านนี้</h1>
+                </div>
+                <p>Shabu Easy by Ammy เป็นร้านอาหารชาบูที่มีคอนเซปต์แบบง่าย ๆ ที่เน้นความสดใหม่ของวัตถุดิบและรสชาติที่อร่อย
+                    ร้านนี้มุ่งเน้นให้ความสำคัญกับประสบการณ์ในการรับประทานอาหารแบบชาบู
+                    และพยายามทำให้การทานอาหารเป็นประสบการณ์ที่น่าจดจำในราคาที่เข้าถึงง่าย ๆ
+                </p>
+                <div class="img-index2"> 
+                    <img src="2ae45960-4451-11eb-814c-9963e6f2ecb0_original.jpg" width="400px" height="300px"> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div 
+             <a class="store-button" href="index.html">
+        <div id="test_button" data-aos="zoom-in" data-aos-delay="1000"></div>
+    </div>
+    
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <!-- ... (previously defined slideshow images) ... -->
+    </div>
+    <!-- New Section 2: Menu Gallery -->
+    <div class="section" data-aos="fade-right" data-aos-duration="2000">
+        <h2>ภาพสินค้าแนะนำ</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="./imgs/หมูเด้ง.jpg" alt="Menu 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./imgs/แฮมหมูสเต็ก.jpg" alt="Menu 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./imgs/สาหร่ายพันปูอัด.jpg" alt="Menu 3">
+            </div>
+            <marquee direction="left" style="color:#9c1032; font-size: 40px;">ซื้อหน้าร้านเพียงไม้ล่ะ 10 บาท &#10071</marquee>
+            <!-- Add more menu images here -->
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".btn-hamburger").on("click", function () {
+            $("nav ul").toggleClass("nav-active");
+        })
+    });</script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

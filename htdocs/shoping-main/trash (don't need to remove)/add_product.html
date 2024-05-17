@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+</head>
+<body>
+    <h1>Add Product</h1>
+
+    <form action="add_product.php" method="POST" enctype="multipart/form-data">
+        <label for="product_id">ID:</label>
+        <input type="number" name="id" id="product_id" required>
+        <br>
+        <label for="product_name">Name:</label>
+        <input type="text" name="name" id="product_name" required>
+        <br>
+        <label for="product_image">Image:</label>
+        <input type="file" name="image" id="product_image" required accept="image/*">
+        <br>
+        <label for="product_price">Price:</label>
+        <input type="number" name="price" id="product_price" required step="0.01">
+        <br>
+        <label for="product_description">Description:</label>
+        <textarea name="description" id="product_description" required></textarea>
+        <br>
+        <label for="product_type">Type:</label>
+        <input type="text" name="type" id="product_type" required>
+        <br>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
